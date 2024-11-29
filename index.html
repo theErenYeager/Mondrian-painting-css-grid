@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mondrian Project</title>
+    <style>
+      /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+      .container {
+        margin: auto;
+        width: 748px;
+        height: 748px;
+        display: grid;
+        grid-template-columns: 320px 419px;
+        grid-template-rows: 414px 325px;
+        gap: 9px;
+        background-color: #232629;
+      }
+      .item {
+        background-color: #f0f1ec;
+      }
+      .red {
+        background-color: #e72f24;
+      }
+      .three {
+        background-color: #232629;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 296px 20px;
+        gap: 9px;
+      }
+      .t {
+        background-color: #f0f1ec;
+      }
+      .four {
+        background-color: #232629;
+        display: grid;
+        grid-template-columns: 198px 153px 50px;
+        grid-template-rows: 132px 155px 20px;
+        gap: 9px;
+      }
+      .f {
+        background-color: #f0f1ec;
+      }
+      .f1 {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .f3{
+        grid-row-start: 2;
+        grid-row-end: 4;
+        grid-column-start: 3;
+        background-color: #e72f24;
+      }
+      .blue{
+        background-color: #004592;
+        border-color: #232629;
+        margin-bottom: 2px;
+        
+
+      }
+      .yellow{
+        background-color: #F9D01E;
+      }
+      .black{
+        background-color: #232629;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Write your HTML here -->
+    <div class="container">
+      <div class="item red"></div>
+      <div class="item two"></div>
+      <div class="item three">
+        <div class="t"></div>
+        <div class="t"></div>
+      </div>
+      <div class="item four">
+        <div class="f f1"></div>
+        <div class="f blue"></div>
+        <div class="f f3"></div>
+        <div class="f yellow"></div>
+        <div class="f black"></div>
+        
+        
+    </div>
+  </body>
+</html>
